@@ -1,0 +1,35 @@
+/* ──────────────────────────────────────────
+   Design Tokens
+   Colors mirror the Figma style-guide variables.
+   Typography follows design/style-guide.md.
+   ────────────────────────────────────────── */
+
+:root {
+  /* Colors — Primary */
+  --color-teal-500: #2ab3b1;
+  --color-green-400: #c0df33;
+
+  /* Colors — Neutral */
+  --color-teal-100: #e6eff5;
+  --color-gray-500: #9aa7be;
+  --color-white: #ffffff;
+
+  /* Typography */
+  --font-family-base: "Karla", sans-serif;
+
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+
+  /* Font sizes — mirrors the style-guide text presets */
+  --font-size-preset-1: 32px;
+  --font-size-preset-2: 24px;
+  --font-size-preset-3: 18px;
+  --font-size-preset-4: 16px;
+  --font-size-preset-5: 14px;
+
+  /* Spacing — mirrors the style-guide spacing scale */
+  --space-100: 8px;
+  --space-200: 16px;
+  --space-300: 24px;
+  --space-500: 40px;
+}

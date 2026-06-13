@@ -1,0 +1,84 @@
+/* ──────────────────────────────────────────
+   Typography
+   Loads Karla from local font files and sets the
+   page-wide body defaults from the style guide.
+   ────────────────────────────────────────── */
+
+@font-face {
+  font-family: "Karla";
+  src: url("../../fonts/Karla/Karla-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Karla";
+  src: url("../../fonts/Karla/Karla-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Page-wide defaults */
+body {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-preset-4);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-gray-500);
+}
+
+/* ──────────────────────────────────────────
+   Text presets
+   Utility classes mirroring the style-guide
+   "Text Preset" definitions. Sizes come from
+   tokens; line-height / letter-spacing are
+   per-preset and kept literal for readability.
+   ────────────────────────────────────────── */
+
+.text-preset-1 {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-preset-1);
+  font-weight: var(--font-weight-bold);
+  line-height: 1.15;
+  letter-spacing: -0.4px;
+}
+
+.text-preset-2 {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-preset-2);
+  font-weight: var(--font-weight-bold);
+  line-height: 1.15;
+  letter-spacing: -0.25px;
+}
+
+.text-preset-3 {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-preset-3);
+  font-weight: var(--font-weight-bold);
+  line-height: 1.15;
+  letter-spacing: -0.25px;
+}
+
+.text-preset-4-bold {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-preset-4);
+  font-weight: var(--font-weight-bold);
+  line-height: 1.45;
+  letter-spacing: -0.25px;
+}
+
+.text-preset-4-regular {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-preset-4);
+  font-weight: var(--font-weight-regular);
+  line-height: 1.65;
+  letter-spacing: -0.5px;
+}
+
+.text-preset-5 {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-preset-5);
+  font-weight: var(--font-weight-regular);
+  line-height: 1.45;
+}
