@@ -1,0 +1,25 @@
+/* ──────────────────────────────────────────
+   Button
+   Full-width call-to-action (e.g. "Sign Up").
+   ────────────────────────────────────────── */
+
+.button {
+  width: 100%;
+  padding: var(--space-200);
+  border: none;
+  border-radius: 5px;
+  background-color: var(--color-green-400);
+  color: var(--color-white);
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+  opacity: 0.9;
+}
+
+.button:focus-visible {
+  outline: 2px solid var(--color-white);
+  outline-offset: 2px;
+}

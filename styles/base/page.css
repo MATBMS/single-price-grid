@@ -1,12 +1,8 @@
 /* ──────────────────────────────────────────
-   Page layout
-   Centres the price-grid card on the page and
-   keeps a gutter so it never touches the edges.
+   Page base
+   Global background for the whole document.
    ────────────────────────────────────────── */
 
-.page {
-  min-height: 100vh;
-  display: grid;
-  place-items: center;
-  padding: var(--space-300);
+body {
+  background-color: var(--color-teal-100);
 }

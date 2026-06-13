@@ -1,0 +1,103 @@
+/* ──────────────────────────────────────────
+   Price grid card
+   Three stacked bands inside one rounded card.
+   `overflow: hidden` clips each band's background
+   colour to the card's rounded corners.
+   ────────────────────────────────────────── */
+
+.price-grid {
+  width: 100%;
+  max-width: 311px; /* card width from the mobile design */
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 15px 15px rgba(0, 81, 171, 0.15);
+}
+
+/* Each band shares the same padding so text left-edges line up */
+.price-grid__intro,
+.price-grid__subscription,
+.price-grid__benefits {
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-500);
+}
+
+/* Intro band (white) */
+.price-grid__intro {
+  gap: var(--space-300);
+  background-color: var(--color-white);
+}
+
+.price-grid__title {
+  color: var(--color-teal-500);
+}
+
+.intro__description {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-100);
+}
+
+.intro__tagline {
+  color: var(--color-green-400);
+}
+
+/* Subscription band (teal 500) */
+.price-grid__subscription {
+  gap: var(--space-300);
+  background-color: var(--color-teal-500);
+  color: var(--color-white);
+}
+
+.subscription__details {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-200);
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: var(--space-100);
+}
+
+.price__period {
+  opacity: 0.5;
+}
+
+/* Benefits band (teal 400) */
+.price-grid__benefits {
+  gap: var(--space-200);
+  background-color: var(--color-teal-400);
+  color: var(--color-white);
+}
+
+.benefits__list {
+  list-style: none;
+  opacity: 0.75;
+}
+
+/* ── Tablet and up: two-column card ──────────
+   The intro spans the full top row; the
+   subscription and benefits bands sit side by
+   side beneath it. Grid auto-placement handles
+   the two bands — no markup change needed.
+   ────────────────────────────────────────── */
+@media (min-width: 768px) {
+  .price-grid {
+    max-width: 635px; /* wider card from the tablet design */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .price-grid__intro {
+    grid-column: 1 / -1;
+  }
+
+  /* The bands are now stretched to equal height, so
+     centre their content vertically like the design. */
+  .price-grid__subscription,
+  .price-grid__benefits {
+    justify-content: center;
+  }
+}
