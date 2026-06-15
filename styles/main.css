@@ -2,7 +2,7 @@
 @import url("base/reset.css");
 @import url("base/variables.css");
 @import url("base/typography.css");
-@import url("base/page.css");
+@import url("base/default.css");
 
 /* Components */
 @import url("components/button.css");
