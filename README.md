@@ -35,8 +35,10 @@ This is a solution to the [Single price grid component challenge on Frontend Men
 
 ### Extra feature
 
-As a User,<br>
-I need to be able to [...],<br>
-So that I can [...].
+As a prospective member,<br>
+I want visible confirmation after I click Sign Up,<br>
+so that I know my click registered and understand this is a learning demo.
 
 ### What I learned
+
+Nothing new — this project was a consolidation of techniques I'd already learned, putting them into practice rather than picking up anything new.

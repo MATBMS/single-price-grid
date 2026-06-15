@@ -1,0 +1,41 @@
+/* ──────────────────────────────────────────
+   Toast
+   Auto-dismissing confirmation popup, pinned to
+   the top-center of the viewport. Echoes the
+   Button: rounded corners, drop shadow, brand
+   teal palette.
+   ────────────────────────────────────────── */
+
+.toast {
+  position: fixed;
+  top: var(--space-300);
+  left: 50%;
+  z-index: 10;
+
+  max-width: min(90%, 400px);
+  padding: var(--space-200) var(--space-300);
+  border-radius: 5px;
+  background-color: var(--color-teal-500);
+  color: var(--color-white);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+
+  /* Hidden + lifted out of view by default. */
+  transform: translate(-50%, -20px);
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s;
+}
+
+.toast--visible {
+  transform: translate(-50%, 0);
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Respect users who prefer reduced motion: skip the slide. */
+@media (prefers-reduced-motion: reduce) {
+  .toast {
+    transition: opacity 0.3s ease, visibility 0.3s;
+    transform: translate(-50%, 0);
+  }
+}

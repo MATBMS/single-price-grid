@@ -19,6 +19,11 @@
   opacity: 0.9;
 }
 
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
 .button:focus-visible {
   outline: 2px solid var(--color-white);
   outline-offset: 2px;
